@@ -2,6 +2,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import {
   ClerkProvider,
+  GoogleOneTap,
   SignInButton,
   SignedIn,
   SignedOut,
@@ -27,7 +28,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <ClerkProvider>
+      
     <html lang="en">
+    <GoogleOneTap />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
